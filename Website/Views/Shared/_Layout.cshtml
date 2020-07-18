@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/fonts.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <nav class="dws-menu">
+
+                <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
+                <label for="menu" class="toggleMenu bar"><i class="icon-bars"></i></label>
+                <ul class="justify-content-around">
+                     <li><a href="@Url.Action("Index", "Home")">ГЛАВНАЯ</a></li>
+                     <li>
+                            <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1">
+                            <a href="@Url.Action("Index", "portfolio")">ПОРТФОЛИО</a>
+                            <label for="sub_m1" class="toggleSubmenu"></label>
+                            <ul>
+                                <li><a href="#">LOVE STORY</a></li>
+                                <li><a href="#">СЕМЕЙНАЯ</a></li>
+                                <li><a href="#">ПОРТРЕТНАЯ</a></li>
+                                <li><a href="#">МЕРОПРИЯТИЯ</a></li>
+                                <li><a href="#">ВИДЕО</a></li>
+                                <li><a href="#">СЕРТИФИКАТЫ</a></li>
+                            </ul>
+                        </li>
+                    <li class="space_nav"></li>
+                    <li><a href="@Url.Action("Index", "price")">СТОИМОСТЬ</a></li>
+                    <li><a href="@Url.Action("Index", "contact")">КОНТАКТЫ</a></li>
+                </ul>
+    </nav>
+
+    <div class="container-fluid cont_wide">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            2020 Евгения Окулова
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

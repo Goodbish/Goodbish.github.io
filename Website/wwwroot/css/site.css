@@ -1,0 +1,343 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+
+
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+  font-weight:bold;
+}
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 2000px) {
+    html {
+        font-size: 28px;
+    }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+.header div a {
+    font-size: 10px;
+    color: black;
+}
+@media (min-width: 768px) {
+    .header div a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 321px) {
+    .header div a {
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .header div a {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .header div a {
+        font-size: 24px;
+    }
+}
+
+
+
+.row_wide {
+    margin-right: 0;
+}
+
+.wideImg {
+    width:100%;
+    height: 45vw;
+}
+
+@media (min-width: 768px) {
+    .wideImg {
+        width: 100%;
+        height: 45vw;
+    }
+}
+
+@media (min-width: 1000px) {
+    .wideImg {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .wideImg {
+        width: 100%;
+        height: 800px;
+    }
+}
+
+.wideImg_sm {
+    width: 100%;
+    height: 20vw;
+}
+
+@media (min-width: 768px) {
+    .wideImg_sm {
+        width: 100%;
+        height: 20vw;
+    }
+}
+
+@media (min-width: 1000px) {
+    .wideImg_sm {
+        width: 100%;
+        height: 250px;
+    }
+}
+    
+
+.cont_wide {
+    padding: 0;
+}
+
+.line {
+    border-color: #000000;
+}
+
+.block_img div {
+    width: 75%;
+    padding: 6px;
+}
+
+    .block_img div img {
+        max-width: 100%;
+        height: auto;
+    }
+
+.inst_logo {
+    height: 8vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.cursor_pointer {
+    cursor: pointer;
+}
+
+/*           */
+
+
+
+
+
+
+
+.dws-menu * {
+    margin: 0;
+    padding: 0;
+}
+
+.dws-menu ul,
+.dws-menu ol {
+    list-style: none;
+}
+
+.bar {
+    text-align:end;
+}
+
+.dws-menu > ul {
+    display: flex;
+    justify-content: center;
+}
+
+    .dws-menu > ul li {
+        position: relative;
+    }
+
+        .dws-menu > ul li a {
+            display: block;
+            background: #fff;
+            padding: 15px 30px 15px 40px;
+            font-size: 14px;
+            color: #454547;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            text-align:center;
+        }
+
+.space_nav {
+    padding-left:10vw;
+    padding-right:10vw;
+}
+
+/*sub menu*/
+.dws-menu li ul {
+    position: absolute;
+    min-width: 150px;
+    display: none;
+}
+
+
+
+    .dws-menu li > ul li a {
+        padding: 10px;
+        text-transform: none;
+        background: #fff;
+        font-size:10px
+    }
+
+    .dws-menu li > ul li ul {
+        position: absolute;
+        right: -150px;
+        top: 0;
+    }
+
+.dws-menu li:hover > ul {
+    display: block;
+}
+
+/*==== MEDIA ====*/
+.dws-menu [type="checkbox"],
+.dws-menu label.toggleSubmenu {
+    display: none;
+}
+
+.dws-menu label.toggleMenu {
+    background: #fff;
+    display: none;
+    padding: 15px 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+@media all and (max-width: 800px) {
+    .dws-menu {
+        overflow: hidden;
+    }
+
+        .dws-menu ul {
+            display: block;
+            max-height: 0;
+            transition: max-height 0.3s;
+        }
+
+        .dws-menu li > ul li ul {
+            position: absolute;
+            right: auto;
+            top: auto;
+        }
+
+        .dws-menu label.toggleMenu {
+            display: block;
+        }
+
+    input.toggleMenu:checked + label.toggleMenu {
+        background: #000;
+        color: #fff;
+    }
+
+    input.toggleMenu:checked ~ ul,
+    input.toggleSubmenu:checked ~ ul {
+        display: block;
+        position: relative;
+        max-height: 5000px;
+        transition: max-height 2s ease-in;
+    }
+
+    .dws-menu label.toggleSubmenu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        display: block;
+    }
+
+    input.toggleSubmenu:checked ~ a {
+        background: #fff;
+        color: #000;
+    }
+
+}
+
+.vert_al {
+    position: absolute;
+    top: 50%;
+}
+
+.contact {
+    font-size: 35px;
+    margin-top: -3em
+}
