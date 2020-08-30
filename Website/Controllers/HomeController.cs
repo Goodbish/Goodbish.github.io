@@ -36,25 +36,42 @@ namespace Website.Controllers
     }
 
     public class portfolioController : Controller
-    {
-        private readonly ILogger<HomeController> _logger;
 
-        public portfolioController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
+    {
 
         public IActionResult Index()
         {
             return View();
         }
+
+        public IActionResult solo()
+        {
+            return View();
+        }
+
+        public IActionResult love_story()
+        {
+            return View();
+        }
+
+        public IActionResult events()
+        {
+            return View();
+        }
+
+        public IActionResult family()
+        {
+            return View();
+        }
+
+
     }
 
-    public class priceController : Controller
+    public class PriceController : Controller
     {
         private readonly ILogger<HomeController> _logger;
 
-        public priceController(ILogger<HomeController> logger)
+        public PriceController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
@@ -79,4 +96,8 @@ namespace Website.Controllers
             return View();
         }
     }
+
+
+
+
 }

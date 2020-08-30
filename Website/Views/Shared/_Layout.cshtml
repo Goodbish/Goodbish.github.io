@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,26 +9,28 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <nav class="dws-menu">
+    <nav class="menu">
 
                 <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
                 <label for="menu" class="toggleMenu bar"><i class="icon-bars"></i></label>
-                <ul class="justify-content-around">
+                <ul class="menu_style">
                      <li><a href="@Url.Action("Index", "Home")">ГЛАВНАЯ</a></li>
                      <li>
                             <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1">
-                            <a href="@Url.Action("Index", "portfolio")">ПОРТФОЛИО</a>
+                            <span class="menu_portfolio">ПОРТФОЛИО<span class="icon-sort-down"></span></span>
                             <label for="sub_m1" class="toggleSubmenu"></label>
                             <ul>
-                                <li><a href="#">LOVE STORY</a></li>
-                                <li><a href="#">СЕМЕЙНАЯ</a></li>
+                                <li><a href="@Url.Action("love_story", "portfolio")">LOVE STORY</a></li>
+                                <li><a href="@Url.Action("family", "portfolio")">СЕМЕЙНАЯ</a></li>
                                 <li><a href="#">ПОРТРЕТНАЯ</a></li>
-                                <li><a href="#">МЕРОПРИЯТИЯ</a></li>
+                                <li><a href="@Url.Action("solo", "portfolio")">ИНДИВИДУАЛЬНАЯ</a></li>
+                                <li><a href="@Url.Action("events", "portfolio")">МЕРОПРИЯТИЯ</a></li>
+                                <li><a href="#">ПУТЕШЕСТВИЯ</a></li>
                                 <li><a href="#">ВИДЕО</a></li>
                                 <li><a href="#">СЕРТИФИКАТЫ</a></li>
                             </ul>
                         </li>
-                    <li class="space_nav"></li>
+                    <li class="logo_nav d-none d-lg-flex">Evgeniia Sea</li>
                     <li><a href="@Url.Action("Index", "price")">СТОИМОСТЬ</a></li>
                     <li><a href="@Url.Action("Index", "contact")">КОНТАКТЫ</a></li>
                 </ul>
@@ -40,9 +42,19 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="footer text-muted text-center position-relative">
         <div class="container">
-            2020 Евгения Окулова
+            <p class="my-4">
+                Photographer in Russia, Okulova Evgeniia
+            </p>
+            Follow me
+            <div class="foot_icons">
+                <a href="https://www.instagram.com/evgenya3_photo/"><span class="icon-instagram"></span></a>
+                <a href="https://vk.com/evgen_ya3"><span class="icon-vk"></span></a>
+            </div>
+            
+            <p class="author_site">Сайт от <a href="https://vk.com/goodbish">Daniel Bannikov</a></p>
+
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

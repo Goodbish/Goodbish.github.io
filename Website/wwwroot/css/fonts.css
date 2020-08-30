@@ -1,40 +1,77 @@
 ﻿
 @font-face {
-    font-family: SourceSansPro;
+    font-family: 'SourceSansPro';
     src: url(../fonts/SourceSansPro-ExtraLight.ttf)
 }
 
 @font-face {
-    font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?r94fa1');
-    src: url('../fonts/icomoon.eot?r94fa1#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?r94fa1') format('truetype'), url('../fonts/icomoon.woff?r94fa1') format('woff'), url('../fonts/icomoon.svg?r94fa1#icomoon') format('svg');
-    font-weight: normal;
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?8fy4sx');
+  src:  url('../fonts/icomoon.eot?8fy4sx#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?8fy4sx') format('truetype'),
+    url('../fonts/icomoon.woff?8fy4sx') format('woff'),
+    url('../fonts/icomoon.svg?8fy4sx#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+    font-family: 'ITC_Edwardian_Script';
+    src: url('../fonts/ITCEDSCR.TTF'); 
     font-style: normal;
-    font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-bars:before {
-    content: "\f0c9";
+  content: "\f0c9";
 }
-
 .icon-navicon:before {
-    content: "\f0c9";
+  content: "\f0c9";
+}
+.icon-reorder:before {
+  content: "\f0c9";
+}
+.icon-sort-desc:before {
+  content: "\f0dd";
 }
 
-.icon-reorder:before {
-    content: "\f0c9";
+.icon-sort-down:before {
+    content: "\f0dd";
+    font-size: 12px;
+    padding-left: 3px;
 }
+
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+.icon-instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}    
+
+.icon-vk:before {
+  content: "\ea98";
+}
+
+    .icon-vk:hover {
+        color: #4c75a3;
+    }
